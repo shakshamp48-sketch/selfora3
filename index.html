@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="<meta name="google-site-verification" content="Humwo_McVM1tu_oPI9hbZY5kMYoNpGP6zXDU1XkvYYo" />">
+
+  <!-- Website SEO -->
+  <title>SELFОRA - Your Personal Digital World</title>
+
+  <meta name="description" content="Welcome to SELFОRA, your personal digital space. Explore calculator, notes, games, music and more.">
+
+  <meta name="keywords" content="SELFОRA, personal website, digital dashboard, calculator, notes, games">
+
+  <meta name="author" content="SELFОRA">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SELF<span>О</span>RA.</div>
+  <button id="themeBtn">☀️</button>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="tag">YOUR PERSONAL DIGITAL SPACE</p>
+
+    <h1>Welcome to <span>SELFОRA</span></h1>
+
+    <p>Your world. Your ideas. Your identity.</p>
+
+    <div class="clock" id="clock">00:00:00</div>
+
+    <p id="date"></p>
+  </section>
+
+  <section class="profile">
+    <h2>My Digital Space</h2>
+    <p>Everything you need, in one place.</p>
+  </section>
+
+  <section class="grid">
+
+    <div class="card">
+      <h2>🧮 Calculator</h2>
+      <input id="calcInput" placeholder="Example: 25+5">
+      <button onclick="calculate()">Calculate</button>
+      <p id="calcResult">Your answer appears here</p>
+    </div>
+
+    <div class="card">
+      <h2>📝 My Notes</h2>
+      <textarea id="notes" placeholder="Write your thoughts..."></textarea>
+      <button onclick="saveNotes()">Save Notes</button>
+      <p id="noteStatus"></p>
+    </div>
+
+    <div class="card">
+      <h2>🎮 Games</h2>
+      <p>Ready for a little fun?</p>
+      <button onclick="playGame()">Play Number Game</button>
+      <p id="gameResult"></p>
+    </div>
+
+    <div class="card">
+      <h2>🎵 Music</h2>
+      <p>Add your favourite music here.</p>
+      <input type="file" id="musicFile" accept="audio/*">
+      <audio id="player" controls></audio>
+    </div>
+
+  </section>
+
+  <section class="search">
+    <h2>Explore Your World</h2>
+    <input id="searchBox" placeholder="Search Google...">
+    <button onclick="searchGoogle()">Search</button>
+  </section>
+
+</main>
+
+<footer>
+  <div class="logo">SELFОRA.</div>
+  <p>Made for your digital world © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
